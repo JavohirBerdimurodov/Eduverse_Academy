@@ -1,120 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Eduverse Academy</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-    <header>
-        <h1>Welcome to Eduverse Academy</h1>
-        <p>Start learning and exploring new courses today!</p>
-    </header>
-
-    <section id="courses">
-        <h2>Our Courses</h2>
-        <div class="course-card">
-            <h3>Course 1: Web Development</h3>
-            <p>Learn how to build websites and web apps.</p>
-            <button>Enroll Now</button>
-        </div>
-        <div class="course-card">
-            <h3>Course 2: Data Science</h3>
-            <p>Learn how to analyze and visualize data.</p>
-            <button>Enroll Now</button>
-        </div>
-    </section>
-
-    <footer>
-        <p>&copy; 2024 Eduverse Academy | All rights reserved</p>
-    </footer>
-
-    <script src="app.js"></script>
-</body>
-</html><!-- In your index.html head section -->
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap">
-<!-- Add a beautiful image to the homepage -->
-<section class="image-section">
-    <img src="luxury-image.jpg" alt="Luxury Image" class="fade-in-image">
-</section>
-<!-- Add Font Awesome -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-<!-- Example of an animated icon -->
-<i class="fas fa-cogs fa-spin"></i> <!-- This will make the gear icon spin -->
-<!-- Course list in HTML -->
-<ul class="course-list">
-    <li onclick="alert('You clicked on IELTS course')">IELTS</li>
-    <li onclick="alert('You clicked on SAT course')">SAT</li>
-</ul><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"><!-- Add an animated element -->
-<div class="animate__animated animate__bounceInLeft">
-    <h2>Welcome to Eduverse Academy</h2>
-</div>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eduverse Academy</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-</head>
-<body>
-    <header class="parallax">
-        <h1>Eduverse Academy</h1>
-        <button>Start Learning</button>
-    </header>
-    <section class="image-section">
-        <img src="luxury-image.jpg" alt="Luxury Image" class="fade-in-image">
-    </section>
-    <section class="course-list">
-        <ul>
-            <li onclick="alert('You clicked on IELTS course')">◍ IELTS</li>
-            <li onclick="alert('You clicked on SAT course')">◍ SAT</li>
-            <li onclick="alert('You clicked on College Application')">◍ College Application</li>
-        </ul>
-    </section>
-    <script src="app.js"></script>
-</body>
-</html><!DOCTYPE html>
-<html lang="en">
-<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Eduverse Academy</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
+  <header class="header">
     <h1>Welcome to Eduverse Academy</h1>
-    <p>Start learning and exploring new courses today!</p>
+    <p>Empowering learners to achieve their dreams!</p>
   </header>
 
-  <section class="courses">
+  <nav class="navbar">
+    <a href="#courses">Courses</a>
+    <a href="#about">About Us</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="hero">
+    <h2>Start Your Learning Journey Today</h2>
+    <button class="cta-btn">Explore Courses</button>
+  </section>
+
+  <section id="courses" class="courses">
     <h2>Our Courses</h2>
-    <div class="course-card">
-      <h3>Course 1: Web Development</h3>
-      <button>Enroll Now</button>
-    </div>
-    <div class="course-card">
-      <h3>Course 2: Data Science</h3>
-      <button>Enroll Now</button>
+    <div class="course-container">
+      <div class="course-card">
+        <h3>Web Development</h3>
+        <p>Learn HTML, CSS, JavaScript, and more!</p>
+        <button class="enroll-btn">Enroll Now</button>
+      </div>
+      <div class="course-card">
+        <h3>Data Science</h3>
+        <p>Master data analysis, Python, and machine learning!</p>
+        <button class="enroll-btn">Enroll Now</button>
+      </div>
+      <div class="course-card">
+        <h3>IELTS Preparation</h3>
+        <p>Boost your IELTS score with expert guidance!</p>
+        <button class="enroll-btn">Enroll Now</button>
+      </div>
     </div>
   </section>
 
-  <section class="extras">
-    <h2>Additional Courses</h2>
-    <ul>
-      <li>IELTS</li>
-      <li>SAT</li>
-    </ul>
+  <section id="about" class="about">
+    <h2>About Eduverse Academy</h2>
+    <p>At Eduverse Academy, we believe in providing high-quality, affordable, and accessible education to help learners worldwide achieve their goals.</p>
   </section>
 
-  <footer>
+  <footer id="contact" class="footer">
+    <p>Contact us at: <a href="mailto:info@eduverse.com">info@eduverse.com</a></p>
     <p>© 2024 Eduverse Academy | All rights reserved</p>
   </footer>
+
+  <script src="app.js"></script>
 </body>
 </html>
