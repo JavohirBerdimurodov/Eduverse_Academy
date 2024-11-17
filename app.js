@@ -1,3 +1,8 @@
-document.querySelector('button').addEventListener('click', function() {
-    alert('You have enrolled in the course!');
+// Example interactive functionality for the site
+
+// Alert when a user clicks "Enroll Now" button
+document.querySelectorAll('.enroll-btn').forEach(button => {
+  button.addEventListener('click', () => {
+    alert('Thank you for your interest! Enrollment will open soon.');
+  });
 });
