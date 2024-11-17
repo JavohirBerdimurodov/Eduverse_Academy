@@ -1,184 +1,147 @@
-/* General Styles */
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f9;
+  color: #333;
 }
 
-header {
-    background-color: #4CAF50;
-    color: white;
-    text-align: center;
-    padding: 20px;
+/* Header Styles */
+.header {
+  text-align: center;
+  padding: 2rem;
+  background: linear-gradient(45deg, #ff7e5f, #feb47b);
+  color: #fff;
 }
 
-h1 {
-    font-size: 3em;
+.header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
 }
 
-p {
-    font-size: 1.2em;
+.header p {
+  font-size: 1.2rem;
 }
 
-#courses {
-    display: flex;
-    justify-content: space-around;
-    margin: 20px;
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: center;
+  background-color: #333;
+  padding: 0.5rem 0;
+}
+
+.navbar a {
+  color: white;
+  margin: 0 1rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* Hero Section */
+#hero {
+  text-align: center;
+  padding: 4rem;
+  background: linear-gradient(45deg, #2193b0, #6dd5ed);
+  color: white;
+}
+
+#hero h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.cta-btn {
+  padding: 0.8rem 1.5rem;
+  background-color: #ff7e5f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.cta-btn:hover {
+  background-color: #feb47b;
+}
+
+/* Courses Section */
+.courses {
+  padding: 2rem;
+  text-align: center;
+}
+
+.course-container {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
 }
 
 .course-card {
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    width: 200px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 300px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .course-card h3 {
-    color: #333;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
 }
 
-button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    margin-top: 10px;
+.course-card p {
+  margin-bottom: 1rem;
 }
 
-button:hover {
-    background-color: #45a049;
-}
-
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
-/* Animated header */
-h1 {
-    font-size: 3em;
-    color: #333;
-    animation: fadeIn 2s ease-in-out;
-}
-
-/* Keyframes for fade-in animation */
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}/* Button hover animation */
-button {
-    padding: 10px 20px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    cursor: pointer;
-    transition: transform 0.3s ease, background-color 0.3s ease;
-}
-
-/* Hover effect */
-button:hover {
-    background-color: #45a049;
-    transform: scale(1.1);
-}/* Parallax background */
-.parallax {
-    background-image: url('your-image.jpg'); /* Replace with your image URL */
-    height: 100vh; 
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}/* Apply luxurious font */
-body {
-    font-family: 'Playfair Display', serif;
-    color: #333;
-    line-height: 1.6;
-}/* Fade-in effect for images */
-.fade-in-image {
-    width: 100%;
-    height: auto;
-    opacity: 0;
-    animation: fadeInImage 3s ease-in-out forwards;
-}
-
-/* Keyframe for fade-in effect */
-@keyframes fadeInImage {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-/* Luxurious background gradient */
-body {
-    background: linear-gradient(135deg, #f06, #ff6347);
-    color: white;
-    padding: 20px;
-}
-/* Reset Styles */
-body {
-  margin: 0;
-  font-family: 'Arial', sans-serif;
-  line-height: 1.6;
-}
-
-/* General Styles */
-header {
-  background: linear-gradient(to right, #ff7e5f, #feb47b);
-  color: #fff;
-  text-align: center;
-  padding: 2rem;
-}
-
-.courses, .extras {
-  padding: 2rem;
-  text-align: center;
-}
-
-.course-card {
-  display: inline-block;
-  border: 2px solid #ccc;
-  border-radius: 8px;
-  margin: 1rem;
-  padding: 1rem;
-  width: 200px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.course-card button {
-  background: #28a745;
-  color: #fff;
-  border: none;
+.enroll-btn {
   padding: 0.5rem 1rem;
+  background: #28a745;
+  color: white;
+  border: none;
   border-radius: 5px;
   cursor: pointer;
 }
 
-.course-card button:hover {
+.enroll-btn:hover {
   background: #218838;
 }
 
-footer {
-  background: #333;
-  color: #fff;
+/* About Section */
+.about {
+  padding: 2rem;
+  text-align: center;
+  background: #f8f9fa;
+}
+
+.about h2 {
+  margin-bottom: 1rem;
+}
+
+.about p {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1rem;
+}
+
+/* Footer */
+.footer {
   text-align: center;
   padding: 1rem;
-  position: fixed;
-  width: 100%;
-  bottom: 0;
+  background: #333;
+  color: white;
 }
+
+
