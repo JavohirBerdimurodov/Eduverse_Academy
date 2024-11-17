@@ -130,3 +130,55 @@ body {
     color: white;
     padding: 20px;
 }
+/* Reset Styles */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+}
+
+/* General Styles */
+header {
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
+  color: #fff;
+  text-align: center;
+  padding: 2rem;
+}
+
+.courses, .extras {
+  padding: 2rem;
+  text-align: center;
+}
+
+.course-card {
+  display: inline-block;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  margin: 1rem;
+  padding: 1rem;
+  width: 200px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.course-card button {
+  background: #28a745;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.course-card button:hover {
+  background: #218838;
+}
+
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
