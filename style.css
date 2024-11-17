@@ -102,4 +102,9 @@ button:hover {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}/* Apply luxurious font */
+body {
+    font-family: 'Playfair Display', serif;
+    color: #333;
+    line-height: 1.6;
 }
