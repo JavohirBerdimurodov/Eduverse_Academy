@@ -107,4 +107,26 @@ body {
     font-family: 'Playfair Display', serif;
     color: #333;
     line-height: 1.6;
+}/* Fade-in effect for images */
+.fade-in-image {
+    width: 100%;
+    height: auto;
+    opacity: 0;
+    animation: fadeInImage 3s ease-in-out forwards;
+}
+
+/* Keyframe for fade-in effect */
+@keyframes fadeInImage {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+/* Luxurious background gradient */
+body {
+    background: linear-gradient(135deg, #f06, #ff6347);
+    color: white;
+    padding: 20px;
 }
