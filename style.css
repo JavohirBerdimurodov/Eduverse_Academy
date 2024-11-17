@@ -63,3 +63,43 @@ footer {
     width: 100%;
     bottom: 0;
 }
+/* Animated header */
+h1 {
+    font-size: 3em;
+    color: #333;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Keyframes for fade-in animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}/* Button hover animation */
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Hover effect */
+button:hover {
+    background-color: #45a049;
+    transform: scale(1.1);
+}/* Parallax background */
+.parallax {
+    background-image: url('your-image.jpg'); /* Replace with your image URL */
+    height: 100vh; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
